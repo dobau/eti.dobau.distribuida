@@ -9,7 +9,7 @@ public class CipherWriterTest extends TestCase {
 
 	public static void main(String[] args) throws IOException {
 		CipherWriter writer = new CipherWriter(new OutputStreamWriter(System.out));
-		writer.write("abcdefghijklmnopqrstuvwxyz");
+		writer.write("abcdefghijklmnopqrstuvwxyz", 0, 3);
 		writer.flush();
 	}
 
